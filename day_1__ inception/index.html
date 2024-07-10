@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>React app</title>
+</head>
+<body>
+
+    <h2>I was already here before</h2>
+
+    <!-- The content already present in the root will be replaced by root.render() -->
+     <!-- When react is loaded this root element is took control over by React, and note that it is not appended but it is replaced. -->
+    <div id="root">
+        <h1>I was here</h1>
+    </div>
+
+    <h3>I am at end</h3>
+
+
+    <!-- Only the root element was controlled by React, not any other things in the DOM. -->
+
+
+    <!-- React -->
+<script src="https://cdn.jsdelivr.net/npm/react@latest/umd/react.production.min.js" crossorigin></script>
+
+<!-- ReactDOM -->
+<script src="https://cdn.jsdelivr.net/npm/react-dom@latest/umd/react-dom.production.min.js" crossorigin></script>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
