@@ -1,0 +1,23 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Saini Saab",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishankumar07/namasteReact.git"
+  },
+  "keywords": [],
+  "author": "Kishan.ta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishankumar07/namasteReact/issues"
+  },
+  "homepage": "https://github.com/kishankumar07/namasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
