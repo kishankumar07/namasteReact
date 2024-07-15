@@ -10,3 +10,21 @@ Only push necessary things to gitHub
 
 package.json is the configuration file for npm, manages the version of packages either exact version, or ^ or  ~
 package.lock.json contains the exact versions of all the dependencies and transitive dependencies 
+
+# - Parcel
+-Dev build
+- Live server
+- (HMR) = Hot Module Replacement
+- File Watching Algorithm
+-Faster Builds due to caching
+- Image Optimization
+- Minification 
+-Bundling
+-Compress 
+- Consistent Hashing
+- Code splitting
+-Differential Bundling
+- Error handling suggestions
+- HTTPs
+- Tree shaking - remove unused codes 
+- Different dev and production bundles

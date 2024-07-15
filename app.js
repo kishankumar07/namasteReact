@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client';
 let heading = React.createElement('h1',{id:'heading'},'Hello world');
 
 // console.log(heading)
@@ -29,7 +31,7 @@ let heading = React.createElement('h1',{id:'heading'},'Hello world');
 
 let parent = React.createElement('div',{ id:'parent' },
     [React.createElement('div',{ id:'child' },
-        [React.createElement('h1',{},'Biriyani'),React.createElement('h2',{},'Samossa')]),React.createElement('div',{id:'child2'},
+        [React.createElement('h1',{},'Biriyani'),React.createElement('h2',{},'Namaste React')]),React.createElement('div',{id:'child2'},
             [React.createElement('h1',{},'Fish'),React.createElement('h3',{},'Crab')]
         )]
     );
