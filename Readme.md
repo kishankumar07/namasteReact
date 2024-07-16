@@ -28,3 +28,22 @@ package.lock.json contains the exact versions of all the dependencies and transi
 - HTTPs
 - Tree shaking - remove unused codes 
 - Different dev and production bundles
+
+
+3rd episode 
+-React.createElement creates a ReactElement which is a Javascript object and while rendering it is converted to HTML.
+- JSX is first converted to React.createElement(objet) and rendered to DOM..
+-JSX is not a valid javascript, parcel uses babel to transpile 
+- Babel is who converts JSX to JS.
+
+
+//React components
+There are two types of components
+1) Class Based components (old version)
+2) Functional Components ----> Latest
+
+So what is React functional component ?
+A) It is just a normal javascript function 😁
+It is a function that returns a JSX | React Element( as we know JSX will be converted to ReactElement by Babel)
+
+A function that returns  a REACT functional Component is REACT functional component.

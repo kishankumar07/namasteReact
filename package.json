@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is Namaste React by Saini Saab",
   "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -16,7 +18,7 @@
     "url": "https://github.com/kishankumar07/namasteReact/issues"
   },
   "homepage": "https://github.com/kishankumar07/namasteReact#readme",
-  "devDependencies": {
+  "devDependencies": { 
     "parcel": "^2.12.0",
     "process": "^0.11.10"
   },
