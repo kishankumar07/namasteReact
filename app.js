@@ -2,103 +2,91 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 //JSX => Babel => React.createElement => Object => HTML Element (render)
 
-//React Element
-let heading= (
-  <h1 className="heading" tabIndex="1">
-    Namaste React
-  </h1>
-);
+/*
+*Header
+*-Logo
+*-Nav-items
 
-//React Component (two ways of React components)
-// 1) Class Based components (old)
-// 2) Functional components (new)
+*Body
+*-Search
+*-Restaurant container
+*-Restaurant card
+*--Image
+*--Name of restaurant, star rating, cuisines,delivery time etc
 
-//REACT functional component
-let HeadingComponent =()=>{
-    return <h1>Namaste React functional component</h1>
-}
-//if it is a one liner then 
-let HeadingComponent2 = ()=> <h1>Namaste REaCT funcitonal components</h1>
+*Footer
+*-Copyright
+*-Links
+*-address
+*-contact
+*/ 
 
-let HeadingComponent3 = ()=> (
-    <h1>Namaste REACT functional components</h1>
-)
-/// all the above syntaxes are same, 
-
-// 1) has return statement to return the jsx;
-// 2) no return as a one liner;
-// 3) one liner with ()
-//----------------------------------------------------------------
-//Component composition ===> component inside another component
-let Title = ()=> (
-        <h1 className="head">
-            Namaste React using JSX
-        </h1>
-)
-let HeadComponent = ()=>{
-   return (
-        <div id='container'>
-            <Title/>
-            <h1 className="heading">Namaste React functional component</h1>
-        </div>
-    )
-}
-
-
-//=======================================================================
-// use of curly braces inside functional component,
-///if curly braces is there inside the function , can write any javascript code
-let number  = 10000;
-
-let HeadingComponent4 = () =>{
-   return (
-        <div id='container'>
-            <h2>{number}</h2>
-            {number + 300}
-             <h1>Namaste React here</h1> 
-        </div>
-        
-    )
-}
-//----------------------------------------------------------------------
-//So we learnt about injecting react component inside other component, now let us look on jsx element inside a jsx component.
-let element = (
-    <h1 className='header'>Namaste React js</h1>
-)
-
-let HeadingComponent5 = () =>{
+let Header =()=>{
     return (
-        <div id='titler'>
-            {element}
-            <h1>Namaste React by Akshai Saini</h1>
+        <div className='header'>
+            <div className="logo-container">
+                <img className="logo" src="https://static.vecteezy.com/system/resources/previews/007/923/442/non_2x/burger-logo-design-template-illustration-free-vector.jpg"></img>
+            </div>
+            <div className="nav-items"> 
+                    <ul>
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>Cart</li>
+                    </ul>
+            </div>
         </div>
-        
     )
 }
-//-----------------------------------------------------------------------
+// inline style
+// let styleCard ={
+//     backgroundColor:"#f0f0f0",
+// }
 
-// next is to check element inside another element and then inside component
-
-let elem = (<span>Hello world</span>)
-
-let summer = (
-    
-    <h1 classNam='none'>
-        {elem}
-        Rahul Renjan
-    </h1>
-)
-
-let HeadingComponent6 = () =>{
+let RestaurantCard = ()=>{
     return (
-        <div id="hinga">
-            {summer}
+        <div className="res-card" style={{ backgroundColor:'#f0f0f0' }}>
+            <img className="res-logo" src="https://www.shutterstock.com/image-photo/burger-tomateoes-lettuce-pickles-on-600nw-2309539129.jpg" alt='image'></img>
+            <h3>Meghana Foods</h3>
+            <h4>Biriyani, North Indian,Asian</h4>
+            <h4>4.4</h4>
+            <h4>38 minutes</h4>
         </div>
     )
 }
+
+
+let Body =()=>{
+    return (
+        <div className="body">
+            <div className="search">Search</div>
+            <div className="res-container">
+                <RestaurantCard></RestaurantCard>
+                <RestaurantCard></RestaurantCard>
+                <RestaurantCard></RestaurantCard>
+                <RestaurantCard></RestaurantCard>
+                <RestaurantCard></RestaurantCard>
+                <RestaurantCard></RestaurantCard>
+            </div>
+        </div>
+    )
+}
+
+
+let AppLayout = ()=>{
+    return (
+        <div className="app">
+            <Header></Header>
+            <Body></Body>
+        </div>
+    )
+}
+
+
+
 
   
 
 let root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent6 />);
+root.render(<AppLayout />);
